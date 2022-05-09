@@ -1,4 +1,4 @@
-import { user } from "../testExamples";
+import { user } from "./testExamples";
 import { isObject } from "./isObject";
 
 describe("isObject", () => {

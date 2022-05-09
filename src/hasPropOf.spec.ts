@@ -1,7 +1,7 @@
 import { isNumber } from "./isNumber";
 import { hasPropOf } from "./hasPropOf";
 import { isString } from "./isString";
-import { user } from "../testExamples";
+import { user } from "./testExamples";
 
 describe("hasPropOf", () => {
   it("correctly infers flat object", () => {

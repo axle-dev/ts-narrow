@@ -1,4 +1,4 @@
-import { user } from "../testExamples";
+import { user } from "./testExamples";
 import { hasProp } from "./hasProp";
 
 describe("hasProp", () => {

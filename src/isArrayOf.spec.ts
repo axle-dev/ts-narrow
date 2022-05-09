@@ -1,4 +1,4 @@
-import { arrayWithDifferentTypes, posts } from "../testExamples";
+import { arrayWithDifferentTypes, posts } from "./testExamples";
 import { isArrayOf } from "./isArrayOf";
 import { isNumber } from "./isNumber";
 import { isObject } from "./isObject";

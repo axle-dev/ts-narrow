@@ -1,4 +1,4 @@
-import { nestedArrays, posts } from "../testExamples";
+import { nestedArrays, posts } from "./testExamples";
 import { hasElementAtOf } from "./hasElementAtOf";
 import { isNumber } from "./isNumber";
 import { isObject } from "./isObject";

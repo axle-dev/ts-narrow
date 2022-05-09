@@ -20,7 +20,7 @@
     "typescript"
   ],
   "author": "Gabriel Rocha de Oliveira",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/axle-dev/is/issues"
   },

@@ -1,4 +1,4 @@
-import { NarrowFunc } from "../types";
+import { NarrowFunc } from "./types";
 import { hasElementAt } from "./hasElementAt";
 
 export const hasElementAtOf =

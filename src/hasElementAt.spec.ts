@@ -1,4 +1,4 @@
-import { posts } from "../testExamples";
+import { posts } from "./testExamples";
 import { hasElementAt } from "./hasElementAt";
 
 describe("hasElementAt", () => {

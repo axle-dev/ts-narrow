@@ -1,4 +1,6 @@
+import { NarrowFunc } from "./types";
+
 export const isArrayOf =
-  <NextTarget>(f: (element: unknown) => element is NextTarget) =>
+  <NextTarget>(f: NarrowFunc<NextTarget>) =>
   (target: unknown): target is NextTarget[] =>
     target instanceof Array && target.every(f);

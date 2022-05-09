@@ -1,4 +1,4 @@
-import { NarrowFunc } from "../types";
+import { NarrowFunc } from "./types";
 import { hasProp } from "./hasProp";
 
 export const hasPropOf =

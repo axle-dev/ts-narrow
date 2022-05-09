@@ -1,6 +1,6 @@
 {
   "name": "ts-narrow",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "typescript type predicates with no dependencies",
   "module": "./lib/esm/index.js",
   "main": "./lib/cjs/index.js",
@@ -8,7 +8,9 @@
     "lib/"
   ],
   "scripts": {
-    "build": "npx tsc && npx tsc -p ./tsconfig-cjs.json"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build": "rm -rf lib && npx tsc && npx tsc -p ./tsconfig-cjs.json && ./fixup"
   },
   "repository": {
     "type": "git",

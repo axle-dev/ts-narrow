@@ -1,7 +1,7 @@
-import { isNumber } from "./isNumber";
-import { hasPropOf } from "./hasPropOf";
-import { isString } from "./isString";
-import { user } from "./testExamples";
+import { isNumber } from "./isNumber.js";
+import { hasPropOf } from "./hasPropOf.js";
+import { isString } from "./isString.js";
+import { user } from "./testExamples.js";
 
 describe("hasPropOf", () => {
   it("correctly infers flat object", () => {

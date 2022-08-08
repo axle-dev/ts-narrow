@@ -1,7 +1,7 @@
-import { hasPropOf } from "./hasPropOf";
-import { isNumber } from "./isNumber";
-import { isObject } from "./isObject";
-import { isString } from "./isString";
+import { hasPropOf } from "./hasPropOf.js";
+import { isNumber } from "./isNumber.js";
+import { isObject } from "./isObject.js";
+import { isString } from "./isString.js";
 
 export const isEnum = <T extends Record<string, string | number>>(
   target: unknown

@@ -1,4 +1,4 @@
-import { isEnum } from "./isEnum";
+import { isEnum } from "./isEnum.js";
 
 export const isEnumOf =
   <T extends Record<string, string | number>>(enumToCompare: T) =>

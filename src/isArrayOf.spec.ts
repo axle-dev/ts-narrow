@@ -1,7 +1,7 @@
-import { arrayWithDifferentTypes, posts } from "./testExamples";
-import { isArrayOf } from "./isArrayOf";
-import { isNumber } from "./isNumber";
-import { isObject } from "./isObject";
+import { arrayWithDifferentTypes, posts } from "./testExamples.js";
+import { isArrayOf } from "./isArrayOf.js";
+import { isNumber } from "./isNumber.js";
+import { isObject } from "./isObject.js";
 
 describe("isArray", () => {
   it("correctly infers that all elements of an array has correct type", () => {

@@ -1,4 +1,4 @@
-import { isArray } from "./isArray";
+import { isArray } from "./isArray.js";
 
 describe("isArray", () => {
   it("infers an array", () => {

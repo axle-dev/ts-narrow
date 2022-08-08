@@ -1,5 +1,5 @@
-import { posts } from "./testExamples";
-import { hasElementAt } from "./hasElementAt";
+import { posts } from "./testExamples.js";
+import { hasElementAt } from "./hasElementAt.js";
 
 describe("hasElementAt", () => {
   it("correctly verify existant index", () => {

@@ -1,4 +1,4 @@
-import { isEnumKeyOf } from "./isEnumKeyOf";
+import { isEnumKeyOf } from "./isEnumKeyOf.js";
 
 enum NumberEnum {
   A,

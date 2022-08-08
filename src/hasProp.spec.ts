@@ -1,5 +1,5 @@
-import { user } from "./testExamples";
-import { hasProp } from "./hasProp";
+import { user } from "./testExamples.js";
+import { hasProp } from "./hasProp.js";
 
 describe("hasProp", () => {
   it("correctly infers flat object", () => {

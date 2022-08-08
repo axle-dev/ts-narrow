@@ -1,5 +1,5 @@
-import { user } from "./testExamples";
-import { isObject } from "./isObject";
+import { user } from "./testExamples.js";
+import { isObject } from "./isObject.js";
 
 describe("isObject", () => {
   it("infers an object", () => {

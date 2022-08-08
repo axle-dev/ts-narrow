@@ -1,5 +1,5 @@
-import { NarrowFunc } from "./types";
-import { hasProp } from "./hasProp";
+import { NarrowFunc } from "./types.js";
+import { hasProp } from "./hasProp.js";
 
 export const hasPropOf =
   <PropName extends string | symbol | number, NextTarget>(

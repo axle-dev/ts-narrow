@@ -1,4 +1,4 @@
-import { NarrowFunc } from "./types";
+import { NarrowFunc } from "./types.js";
 
 type TypesFromNarrowTuple<T extends unknown> = T extends [
   (target: unknown) => target is infer Head

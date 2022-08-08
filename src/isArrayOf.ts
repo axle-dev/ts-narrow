@@ -1,4 +1,4 @@
-import { NarrowFunc } from "./types";
+import { NarrowFunc } from "./types.js";
 
 export const isArrayOf =
   <NextTarget>(f: NarrowFunc<NextTarget>) =>

@@ -1,17 +1,17 @@
-import { hasElementAt } from "./hasElementAt";
-import { hasElementAtOf } from "./hasElementAtOf";
-import { hasProp } from "./hasProp";
-import { hasPropOf } from "./hasPropOf";
-import { isArray } from "./isArray";
-import { isArrayOf } from "./isArrayOf";
-import { isEnum } from "./isEnum";
-import { isEnumOf } from "./isEnumOf";
-import { isEnumValueOf } from "./isEnumValueOf";
-import { isNumber } from "./isNumber";
-import { isObject } from "./isObject";
-import { isOneOf } from "./isOneOf";
-import { isRecordOf } from "./isRecordOf";
-import { isString } from "./isString";
+import { hasElementAt } from "./hasElementAt.js";
+import { hasElementAtOf } from "./hasElementAtOf.js";
+import { hasProp } from "./hasProp.js";
+import { hasPropOf } from "./hasPropOf.js";
+import { isArray } from "./isArray.js";
+import { isArrayOf } from "./isArrayOf.js";
+import { isEnum } from "./isEnum.js";
+import { isEnumOf } from "./isEnumOf.js";
+import { isEnumValueOf } from "./isEnumValueOf.js";
+import { isNumber } from "./isNumber.js";
+import { isObject } from "./isObject.js";
+import { isOneOf } from "./isOneOf.js";
+import { isRecordOf } from "./isRecordOf.js";
+import { isString } from "./isString.js";
 
 export {
   hasElementAt,

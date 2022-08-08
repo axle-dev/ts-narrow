@@ -1,8 +1,8 @@
-import { nestedArrays, posts } from "./testExamples";
-import { hasElementAtOf } from "./hasElementAtOf";
-import { isNumber } from "./isNumber";
-import { isObject } from "./isObject";
-import { isString } from "./isString";
+import { nestedArrays, posts } from "./testExamples.js";
+import { hasElementAtOf } from "./hasElementAtOf.js";
+import { isNumber } from "./isNumber.js";
+import { isObject } from "./isObject.js";
+import { isString } from "./isString.js";
 
 describe("hasElementAtOfOf", () => {
   it("correctly verify existant index", () => {

@@ -1,5 +1,5 @@
-import { NarrowFunc } from "./types";
-import { hasElementAt } from "./hasElementAt";
+import { NarrowFunc } from "./types.js";
+import { hasElementAt } from "./hasElementAt.js";
 
 export const hasElementAtOf =
   <T, Pos extends number, Obj extends { [K in Pos]: T } = { [K in Pos]: T }>(

@@ -1,4 +1,4 @@
-import { isNumber } from "./isNumber";
+import { isNumber } from "./isNumber.js";
 
 describe("isNumber", () => {
   it("infers an object", () => {

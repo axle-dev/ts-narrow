@@ -1,6 +1,6 @@
-import { isNumber } from "./isNumber";
-import { isOneOf } from "./isOneOf";
-import { isString } from "./isString";
+import { isNumber } from "./isNumber.js";
+import { isOneOf } from "./isOneOf.js";
+import { isString } from "./isString.js";
 
 describe("isOneOf", () => {
   it("passes if target is one of", () => {

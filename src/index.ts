@@ -1,3 +1,4 @@
+import { ensure } from "./ensure.js";
 import { hasElementAt } from "./hasElementAt.js";
 import { hasElementAtOf } from "./hasElementAtOf.js";
 import { hasProp } from "./hasProp.js";
@@ -28,4 +29,5 @@ export {
   isOneOf,
   isString,
   isRecordOf,
+  ensure,
 };

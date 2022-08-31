@@ -4,7 +4,7 @@
 - [Library basics](#ts-narrow)
 
 This library is not supposed to be a schema validator, or a object validator,
-that's the reason it doesn't support custom messages, for example. You should use
+so it doesn't throw any errors and will always return a boolean response. You should use
 this library as a quick helper to narrow from more generic types, to something that you can work with.
 
 For example:

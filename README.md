@@ -4,7 +4,7 @@
 - [Library basics](#ts-narrow)
 
 This library is not supposed to be a schema validator, or a object validator,
-so it doesn't throw any errors and will always return a boolean response. You should use
+so it doesn't throw any errors and will always return a boolean result. You should use
 this library as a quick helper to narrow from more generic types, to something that you can work with.
 
 For example:

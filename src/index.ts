@@ -16,6 +16,7 @@ import { isString } from "./isString.js";
 import { isLiteral } from "./isLiteral.js";
 import { isStringLiteral } from "./isStringLiteral.js";
 import { isObjectOf } from "./isObjectOf.js";
+import { isInstanceOf } from "./isInstanceOf.js";
 
 export {
   hasElementAt,
@@ -36,4 +37,5 @@ export {
   isLiteral,
   isStringLiteral,
   isObjectOf,
+  isInstanceOf,
 };

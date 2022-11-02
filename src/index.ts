@@ -14,6 +14,8 @@ import { isOneOf } from "./isOneOf.js";
 import { isRecordOf } from "./isRecordOf.js";
 import { isString } from "./isString.js";
 import { isLiteral } from "./isLiteral.js";
+import { isStringLiteral } from "./isStringLiteral.js";
+import { isObjectOf } from "./isObjectOf.js";
 
 export {
   hasElementAt,
@@ -32,4 +34,6 @@ export {
   isRecordOf,
   ensure,
   isLiteral,
+  isStringLiteral,
+  isObjectOf,
 };

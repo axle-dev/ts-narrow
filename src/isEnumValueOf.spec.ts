@@ -19,8 +19,8 @@ describe("isEnumValueOf", () => {
     expect(isEnumValueOf(NumberEnum)(1)).toBeTruthy();
     expect(isEnumValueOf(NumberEnum)(2)).toBeTruthy();
     expect(isEnumValueOf(NumberEnum)(247)).toBeTruthy();
-    expect(isEnumValueOf(NumberEnum)("A")).toBeTruthy();
-    expect(isEnumValueOf(NumberEnum)("B")).toBeTruthy();
+    expect(isEnumValueOf(StringEnum)("a")).toBeTruthy();
+    expect(isEnumValueOf(StringEnum)("b")).toBeTruthy();
     expect(isEnumValueOf(NumberEnum)("C")).toBeTruthy();
     expect(isEnumValueOf(NumberEnum)("D")).toBeTruthy();
   });

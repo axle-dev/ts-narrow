@@ -1,5 +1,19 @@
-import { posts } from "./testExamples.js";
 import { hasElementAt } from "./hasElementAt.js";
+
+const posts: unknown = [
+  {
+    title: "Amazing1!",
+    description: "This lib is truly awesome1!",
+  },
+  {
+    title: "Amazing2!",
+    description: "This lib is truly awesome2!",
+  },
+  {
+    title: "Amazing3!",
+    description: "This lib is truly awesome3!",
+  },
+];
 
 describe("hasElementAt", () => {
   it("correctly verify existant index", () => {

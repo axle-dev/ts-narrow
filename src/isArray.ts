@@ -1,2 +1,3 @@
-export const isArray = <T extends unknown>(array: unknown): array is T[] =>
-  array instanceof Array;
+export const isArray = <Target extends unknown>(
+  array: unknown
+): array is Target[] => array instanceof Array;

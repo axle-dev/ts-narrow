@@ -1,4 +1,4 @@
 export const isInstanceOf =
-  <T extends Function>(e: T) =>
-  (target: unknown): target is T =>
+  <Target extends Function>(e: Target) =>
+  (target: unknown): target is Target =>
     target instanceof e;

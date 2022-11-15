@@ -1,4 +1,4 @@
 export const isEnumKeyOf =
-  <T>(enumToCompare: T) =>
-  (target: string | number | symbol): target is keyof T =>
+  <Target>(enumToCompare: Target) =>
+  (target: string | number | symbol): target is keyof Target =>
     target in enumToCompare;

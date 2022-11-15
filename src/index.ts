@@ -17,6 +17,9 @@ import { isLiteral } from "./isLiteral.js";
 import { isStringLiteral } from "./isStringLiteral.js";
 import { isObjectOf } from "./isObjectOf.js";
 import { isInstanceOf } from "./isInstanceOf.js";
+import { ensureOf } from "./ensureOf.js";
+import { hasElementsOf } from "./hasElementsOf.js";
+import { isOneStringLiteralOf } from "./isOneStringLiteralOf.js";
 
 export {
   hasElementAt,
@@ -38,4 +41,7 @@ export {
   isStringLiteral,
   isObjectOf,
   isInstanceOf,
+  ensureOf,
+  hasElementsOf,
+  isOneStringLiteralOf,
 };

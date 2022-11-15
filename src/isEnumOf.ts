@@ -1,8 +1,8 @@
 import { isEnum } from "./isEnum.js";
 
 export const isEnumOf =
-  <T extends Record<string, string | number>>(enumToCompare: T) =>
-  (target: unknown): target is T => {
+  <Target extends Record<string, string | number>>(enumToCompare: Target) =>
+  (target: unknown): target is Target => {
     return (
       isEnum(target) &&
       Object.entries(target).every(

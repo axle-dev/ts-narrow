@@ -3,9 +3,9 @@ import { isNumber } from "./isNumber.js";
 import { isObject } from "./isObject.js";
 import { isString } from "./isString.js";
 
-export const isEnum = <T extends Record<string, string | number>>(
+export const isEnum = <Target extends Record<string, string | number>>(
   target: unknown
-): target is T => {
+): target is Target => {
   if (!(target instanceof Array) && isObject(target)) {
     const entries = Object.entries(target);
     if (

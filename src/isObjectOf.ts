@@ -7,9 +7,9 @@ type NarrowAny = NarrowFunc<unknown>;
 type NarrowFuncRecord = Record<string | symbol | number, NarrowAny>;
 
 export const isObjectOf =
-  <TargetRecord extends NarrowFuncRecord>(map: TargetRecord) =>
+  <Target extends NarrowFuncRecord>(map: Target) =>
   (
     target: unknown
-  ): target is { [K in keyof TargetRecord]: TargetOfNarrow<TargetRecord[K]> } =>
+  ): target is { [K in keyof Target]: TargetOfNarrow<Target[K]> } =>
     isObject(target) &&
     Object.keys(map).every((key) => hasPropOf(key, map[key])(target));

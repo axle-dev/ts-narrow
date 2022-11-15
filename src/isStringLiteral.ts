@@ -1,4 +1,4 @@
 export const isStringLiteral =
-  <TargetLiteral extends string | number>(l: `${TargetLiteral}`) =>
-  (target: unknown): target is TargetLiteral =>
+  <Target extends string | number>(l: `${Target}`) =>
+  (target: unknown): target is Target =>
     target === l;

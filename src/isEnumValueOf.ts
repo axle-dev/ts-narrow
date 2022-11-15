@@ -1,4 +1,4 @@
 export const isEnumValueOf =
-  <T extends Record<string, string | number>>(e: T) =>
-  (target: unknown): target is T[keyof T] =>
+  <Target extends Record<string, string | number>>(e: Target) =>
+  (target: unknown): target is Target[keyof Target] =>
     Object.values(e).some((value) => value === target);

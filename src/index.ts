@@ -21,6 +21,7 @@ import { hasElementsOf } from "./hasElementsOf.js";
 import { isOneStringLiteralOf } from "./isOneStringLiteralOf.js";
 import { isBoolean } from "./isBoolean.js";
 import { ensureOf } from "./ensureOf.js";
+import { isTruthy } from "./isTruthy.js";
 
 export {
   hasElementAt,
@@ -46,4 +47,5 @@ export {
   isOneStringLiteralOf,
   isBoolean,
   ensureOf,
+  isTruthy,
 };

@@ -16,7 +16,7 @@ import { isString } from "./isString.js";
 import { isLiteral } from "./isLiteral.js";
 import { isObjectOf } from "./isObjectOf.js";
 import { isInstanceOf } from "./isInstanceOf.js";
-import { assertOf } from "./assertOf.js";
+import { assert } from "./assert.js";
 import { hasElementsOf } from "./hasElementsOf.js";
 import { isOneStringLiteralOf } from "./isOneStringLiteralOf.js";
 import { isBoolean } from "./isBoolean.js";
@@ -42,7 +42,7 @@ export {
   isLiteral,
   isObjectOf,
   isInstanceOf,
-  assertOf,
+  assert,
   hasElementsOf,
   isOneStringLiteralOf,
   isBoolean,

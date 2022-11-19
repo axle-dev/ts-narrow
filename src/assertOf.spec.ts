@@ -13,18 +13,19 @@ const b: unknown = {
 
 describe("assertOf", () => {
   it("is truthy", () => {
-    expect(() => assertOf(isString)(a)).not.toThrow();
+    expect(() => assertOf(isString, a)).not.toThrow();
     expect(() =>
       assertOf(
         isObjectOf({
           num: isNumber,
           str: isString,
           arr: hasElementsOf([isNumber, isString]),
-        })
-      )(b)
+        }),
+        b
+      )
     ).not.toThrow();
   });
   it("is falsy", () => {
-    expect(() => assertOf(isNumber)(a)).toThrow();
+    expect(() => assertOf(isNumber, a)).toThrow();
   });
 });

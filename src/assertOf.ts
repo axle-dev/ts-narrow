@@ -1,6 +1,6 @@
 import { NarrowFunc } from "./types";
 
-export const ensureOf =
+export const assertOf =
   <Target>(f: NarrowFunc<Target>) =>
   (
     target: unknown,

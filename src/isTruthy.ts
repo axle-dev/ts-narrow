@@ -1,4 +1,4 @@
-export const ensure = <Target>(
+export const isTruthy = <Target>(
   target: Target | undefined | null,
   message: string = "This value was promised to be there."
 ): Target => {

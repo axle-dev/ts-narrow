@@ -1,4 +1,4 @@
-import { ensureOf } from "./ensureOf.js";
+import { assertOf } from "./assertOf.js";
 import { isString } from "./isString.js";
 import { isNumber } from "./isNumber.js";
 import { isObjectOf } from "./isObjectOf.js";
@@ -11,11 +11,11 @@ const b: unknown = {
   arr: [5, "3"],
 };
 
-describe("ensureOf", () => {
+describe("assertOf", () => {
   it("not throws", () => {
-    expect(() => ensureOf(isString)(a)).not.toThrow();
+    expect(() => assertOf(isString)(a)).not.toThrow();
     expect(() =>
-      ensureOf(
+      assertOf(
         isObjectOf({
           num: isNumber,
           str: isString,
@@ -25,6 +25,6 @@ describe("ensureOf", () => {
     ).not.toThrow();
   });
   it("throws", () => {
-    expect(() => ensureOf(isNumber)(a)).toThrow();
+    expect(() => assertOf(isNumber)(a)).toThrow();
   });
 });

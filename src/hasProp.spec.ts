@@ -26,12 +26,12 @@ const user: unknown = {
 };
 
 describe("hasProp", () => {
-  it("correctly infers flat object", () => {
+  it("is truthy", () => {
     expect(hasProp("firstName")(user)).toBeTruthy();
     expect(hasProp("lastName")(user)).toBeTruthy();
     expect(hasProp("age")(user)).toBeTruthy();
   });
-  it("fails for wrong property", () => {
+  it("is falsy", () => {
     expect(hasProp("wrongProperty")(user)).toBeFalsy();
   });
 });

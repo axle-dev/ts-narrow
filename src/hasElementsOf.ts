@@ -1,5 +1,5 @@
-import { isArray } from "./isArray";
-import { NarrowFunc, FixedArrayValues } from "./types";
+import { isArray } from "./isArray.js";
+import type { NarrowFunc, FixedArrayValues } from "./types";
 
 export const hasElementsOf =
   <NarrowFuncFixedArray extends readonly NarrowFunc<unknown>[]>(

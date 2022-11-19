@@ -14,7 +14,7 @@ enum StringEnum {
 }
 
 describe("isEnumOf", () => {
-  it("correctly infers if target and enum have exactly the same props and values", () => {
+  it("is truthy", () => {
     expect(
       isEnumOf(NumberEnum)({
         0: "A",
@@ -29,7 +29,7 @@ describe("isEnumOf", () => {
     ).toBeTruthy();
     expect(isEnumOf({ A: "a", B: "b", C: "QWE" })(StringEnum)).toBeTruthy();
   });
-  it("fails if target and enum doesn't have exactly the same props and values", () => {
+  it("is falsy", () => {
     expect(
       isEnumOf(NumberEnum)({
         A: 0,

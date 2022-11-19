@@ -14,7 +14,7 @@ enum StringEnum {
 }
 
 describe("isEnumValueOf", () => {
-  it("correctly see if enum has value of", () => {
+  it("is truthy", () => {
     expect(isEnumValueOf(NumberEnum)(0)).toBeTruthy();
     expect(isEnumValueOf(NumberEnum)(1)).toBeTruthy();
     expect(isEnumValueOf(NumberEnum)(2)).toBeTruthy();
@@ -24,7 +24,7 @@ describe("isEnumValueOf", () => {
     expect(isEnumValueOf(NumberEnum)("C")).toBeTruthy();
     expect(isEnumValueOf(NumberEnum)("D")).toBeTruthy();
   });
-  it("fails if enum doesn.t have value of", () => {
+  it("is falsy", () => {
     expect(isEnumValueOf(NumberEnum)("X")).toBeFalsy();
     expect(isEnumValueOf(NumberEnum)(3)).toBeFalsy();
   });

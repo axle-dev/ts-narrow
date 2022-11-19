@@ -26,12 +26,12 @@ const user: unknown = {
 };
 
 describe("isObject", () => {
-  it("infers an object", () => {
+  it("is truthy", () => {
     expect(isObject(user)).toBeTruthy();
     expect(isObject([])).toBeTruthy();
     expect(isObject(null)).toBeTruthy();
   });
-  it("fails for not object", () => {
+  it("is falsy", () => {
     expect(isObject(1)).toBeFalsy();
     expect(isObject("asd")).toBeFalsy();
     expect(isObject(undefined)).toBeFalsy();

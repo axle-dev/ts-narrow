@@ -1,14 +1,14 @@
 import { isNumber } from "./isNumber.js";
 
 describe("isNumber", () => {
-  it("infers an object", () => {
+  it("is truthy", () => {
     expect(isNumber(1)).toBeTruthy();
     expect(isNumber(0)).toBeTruthy();
     expect(isNumber(Number())).toBeTruthy();
     expect(isNumber(NaN)).toBeTruthy();
     expect(isNumber(0x123)).toBeTruthy();
   });
-  it("fails for not object", () => {
+  it("is falsy", () => {
     expect(isNumber([])).toBeFalsy();
     expect(isNumber({})).toBeFalsy();
     expect(isNumber(null)).toBeFalsy();

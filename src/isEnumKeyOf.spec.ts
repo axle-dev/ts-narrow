@@ -14,7 +14,7 @@ enum StringEnum {
 }
 
 describe("isEnumKeyOf", () => {
-  it("passes if target is keyof enum", () => {
+  it("is truthy", () => {
     expect(isEnumKeyOf(NumberEnum)(0)).toBeTruthy();
     expect(isEnumKeyOf(NumberEnum)(1)).toBeTruthy();
     expect(isEnumKeyOf(NumberEnum)(2)).toBeTruthy();
@@ -28,7 +28,7 @@ describe("isEnumKeyOf", () => {
     expect(isEnumKeyOf(StringEnum)("B")).toBeTruthy();
     expect(isEnumKeyOf(StringEnum)("C")).toBeTruthy();
   });
-  it("fails if target is not keyof enum", () => {
+  it("is falsy", () => {
     expect(isEnumKeyOf(NumberEnum)(3)).toBeFalsy();
     expect(isEnumKeyOf(NumberEnum)("F")).toBeFalsy();
     expect(isEnumKeyOf(StringEnum)("D")).toBeFalsy();

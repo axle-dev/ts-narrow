@@ -1,3 +1,2 @@
-export const isString = <Target extends string>(
-  target: unknown
-): target is Target => typeof target === "string";
+export const isString = (target: unknown): target is string =>
+  typeof target === "string";

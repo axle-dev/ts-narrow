@@ -1,11 +1,11 @@
 import { isArray } from "./isArray.js";
 
 describe("isArray", () => {
-  it("infers an array", () => {
+  it("is truthy", () => {
     expect(isArray([])).toBeTruthy();
     expect(isArray(new Array())).toBeTruthy();
   });
-  it("fails for not array", () => {
+  it("is falsy", () => {
     expect(isArray({})).toBeFalsy();
     expect(isArray(1)).toBeFalsy();
     expect(isArray("asd")).toBeFalsy();

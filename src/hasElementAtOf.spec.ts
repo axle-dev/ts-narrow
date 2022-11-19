@@ -21,10 +21,8 @@ const posts: unknown = [
 ];
 
 describe("hasElementAtOfOf", () => {
-  it("correctly verify existant index", () => {
+  it("is truthy", () => {
     expect(hasElementAtOf(0, isObject)(posts)).toBeTruthy();
-  });
-  it("can be nested to verify nested indexes", () => {
     expect(
       hasElementAtOf(
         2,
@@ -32,10 +30,8 @@ describe("hasElementAtOfOf", () => {
       )(nestedArrays)
     ).toBeTruthy();
   });
-  it("fails for undefined index", () => {
+  it("is falsy", () => {
     expect(hasElementAtOf(3, isString)(nestedArrays)).toBeFalsy();
-  });
-  it("fails for existant index and wrong type", () => {
     expect(hasElementAtOf(2, isString)(isNumber)).toBeFalsy();
   });
 });

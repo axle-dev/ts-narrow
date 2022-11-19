@@ -6,10 +6,10 @@ class Etc {
 }
 
 describe("isEnumValueOf", () => {
-  it("correctly see if enum has value of", () => {
+  it("is truthy", () => {
     expect(isInstanceOf(Etc)(new Etc())).toBeTruthy();
   });
-  it("fails if enum doesn.t have value of", () => {
+  it("is falsy", () => {
     expect(isInstanceOf(Etc)(1)).toBeFalsy();
     expect(isInstanceOf(Etc)(2)).toBeFalsy();
     expect(isInstanceOf(Etc)(new Function())).toBeFalsy();

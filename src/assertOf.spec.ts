@@ -12,7 +12,7 @@ const b: unknown = {
 };
 
 describe("assertOf", () => {
-  it("not throws", () => {
+  it("is truthy", () => {
     expect(() => assertOf(isString)(a)).not.toThrow();
     expect(() =>
       assertOf(
@@ -24,7 +24,7 @@ describe("assertOf", () => {
       )(b)
     ).not.toThrow();
   });
-  it("throws", () => {
+  it("is falsy", () => {
     expect(() => assertOf(isNumber)(a)).toThrow();
   });
 });

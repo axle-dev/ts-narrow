@@ -5,7 +5,7 @@ import { hasPropOf } from "./hasPropOf.js";
 import { isArray } from "./isArray.js";
 
 describe("isObjectOf", () => {
-  it("narrows an object correctly", () => {
+  it("is truthy", () => {
     expect(
       isObjectOf({ a: isString, b: isNumber, c: hasPropOf("d", isArray) })({
         a: "test",
@@ -18,7 +18,7 @@ describe("isObjectOf", () => {
     expect(isObjectOf({})(null)).toBeTruthy();
     expect(isObjectOf({})([])).toBeTruthy();
   });
-  it("fails for wrong ones", () => {
+  it("is falsy", () => {
     expect(isObjectOf({ a: isString })({ a: isNumber })).toBeFalsy();
     expect(isObjectOf({ a: isString })({})).toBeFalsy();
     expect(isObjectOf({})(undefined)).toBeFalsy();

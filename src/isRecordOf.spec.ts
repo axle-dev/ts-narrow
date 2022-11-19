@@ -15,11 +15,11 @@ const obj2: unknown = {
 };
 
 describe("isRecordOf", () => {
-  it("passes if all values in record has correct types", () => {
+  it("is truthy", () => {
     expect(isRecordOf(isString)(obj)).toBeTruthy();
     expect(isRecordOf(isOneOf(isString, isNumber))(obj2)).toBeTruthy();
   });
-  it("fails if all values in record has wrong types", () => {
+  it("is falsy", () => {
     expect(isRecordOf(isNumber)(obj)).toBeFalsy();
     expect(isRecordOf(isOneOf(isString, isObject))(obj2)).toBeFalsy();
   });

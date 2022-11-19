@@ -16,12 +16,12 @@ const posts: unknown = [
 ];
 
 describe("hasElementAt", () => {
-  it("correctly verify existant index", () => {
+  it("is truthy", () => {
     expect(hasElementAt(0)(posts)).toBeTruthy();
     expect(hasElementAt(1)(posts)).toBeTruthy();
     expect(hasElementAt(2)(posts)).toBeTruthy();
   });
-  it("fails for undefined index", () => {
+  it("is falsy", () => {
     expect(hasElementAt(3)(posts)).toBeFalsy();
   });
 });

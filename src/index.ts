@@ -1,4 +1,4 @@
-import { isTruthy } from "./isTruthy.js";
+import { ensure } from "./ensure.js";
 import { hasElementAt } from "./hasElementAt.js";
 import { hasElementAtOf } from "./hasElementAtOf.js";
 import { hasProp } from "./hasProp.js";
@@ -14,12 +14,13 @@ import { isOneOf } from "./isOneOf.js";
 import { isRecordOf } from "./isRecordOf.js";
 import { isString } from "./isString.js";
 import { isLiteral } from "./isLiteral.js";
-import { isStringLiteral } from "./isStringLiteral.js";
 import { isObjectOf } from "./isObjectOf.js";
 import { isInstanceOf } from "./isInstanceOf.js";
 import { assertOf } from "./assertOf.js";
 import { hasElementsOf } from "./hasElementsOf.js";
 import { isOneStringLiteralOf } from "./isOneStringLiteralOf.js";
+import { isBoolean } from "./isBoolean.js";
+import { ensureOf } from "./ensureOf.js";
 
 export {
   hasElementAt,
@@ -36,12 +37,13 @@ export {
   isOneOf,
   isString,
   isRecordOf,
-  isTruthy,
+  ensure,
   isLiteral,
-  isStringLiteral,
   isObjectOf,
   isInstanceOf,
   assertOf,
   hasElementsOf,
   isOneStringLiteralOf,
+  isBoolean,
+  ensureOf,
 };

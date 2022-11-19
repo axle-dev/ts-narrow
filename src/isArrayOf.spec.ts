@@ -19,10 +19,10 @@ const posts: unknown = [
 ];
 
 describe("isArray", () => {
-  it("correctly infers that all elements of an array has correct type", () => {
+  it("is truthy", () => {
     expect(isArrayOf(isObject)(posts)).toBeTruthy();
   });
-  it("fails if any of elements didn't match", () => {
+  it("is falsy", () => {
     expect(isArrayOf(isNumber)(arrayWithDifferentTypes)).toBeFalsy();
   });
 });

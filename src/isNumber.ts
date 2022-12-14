@@ -1,3 +1,2 @@
-export const isNumber = <Target extends number>(
-  target: unknown
-): target is Target => typeof target === "number";
+export const isNumber = (target: unknown): target is number =>
+  typeof target === "number";

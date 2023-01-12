@@ -1,4 +1,4 @@
 export const isInstanceOf =
-  <Target extends Function>(e: Target) =>
-  (target: unknown): target is Target =>
+  <T extends abstract new (...args: any) => any>(e: T) =>
+  (target: unknown): target is InstanceType<T> =>
     target instanceof e;

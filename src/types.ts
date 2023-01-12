@@ -21,3 +21,5 @@ export type FixedArrayValues<T extends unknown> = T extends [
   : T extends [(target: unknown) => target is infer Head, ...infer Tail]
   ? [Head, ...FixedArrayValues<Tail>]
   : never;
+
+export type InferNarrow<T> = T extends NarrowFunc<infer U> ? U : T;

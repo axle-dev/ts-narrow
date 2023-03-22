@@ -55,7 +55,7 @@ Checks if target is a value of a specific enum.
 Checks if target is a number.
 
 ### isObject
-Checks if target is a object.
+Checks if target is an object.
 Please notice that `null` is a valid javascript object.
 
 ### isOneOf
@@ -69,7 +69,7 @@ Checks if target is an object and it has all its properties with the same passed
 
 ### ensure
 Throws if target is `null` or `undefined`.
-Can receive a optional message or anything that extends Error to customize the message to be throw.
+Can receive an optional message or anything that extends Error to customize the message to be throw.
 
 ### isLiteral
 Checks if target is a literal with specific value.
@@ -77,7 +77,7 @@ Checks if target is a literal with specific value.
 ### isObjectOf
 Checks if target is a object with specific shape.
 Can be composed to check the type of each property individually by using a `NarrowFunc`.
-It doesn't check for extra properties.
+It doesn't care about extra properties.
 
 ### isInstanceOf
 Checks if target is an instance of a class.

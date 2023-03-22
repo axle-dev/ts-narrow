@@ -61,6 +61,9 @@ Please notice that `null` is a valid javascript object.
 ### isOneOf
 Checks if target is one of passed arguments.
 
+### isUnionOf
+Checks if target is all of passed arguments.
+
 ### isString
 Checks if target is a string.
 

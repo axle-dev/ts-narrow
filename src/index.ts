@@ -22,6 +22,7 @@ import { isOneStringLiteralOf } from "./isOneStringLiteralOf.js";
 import { isBoolean } from "./isBoolean.js";
 import { ensureOf } from "./ensureOf.js";
 import { isTruthy } from "./isTruthy.js";
+import { isUnionOf } from "./isUnionOf.js";
 
 export {
   hasElementAt,
@@ -48,4 +49,5 @@ export {
   isBoolean,
   ensureOf,
   isTruthy,
+  isUnionOf,
 };

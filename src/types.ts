@@ -6,13 +6,20 @@ export type TypesFromFixedArray<T extends unknown> = T extends [infer Head]
   ? Head | TypesFromFixedArray<Tail>
   : never;
 
-export type TypesFromNarrowFuncFixedArray<T extends unknown> = T extends [
+export type OneOfTypesFromNarrowFuncFixedArray<T extends unknown> = T extends [
   (target: unknown) => target is infer Head
 ]
   ? Head
   : T extends [(target: unknown) => target is infer Head, ...infer Tail]
-  ? Head | TypesFromNarrowFuncFixedArray<Tail>
+  ? Head | OneOfTypesFromNarrowFuncFixedArray<Tail>
   : never;
+
+export type UnionOfTypesFromNarrowFuncFixedArray<T extends unknown> =
+  T extends [(target: unknown) => target is infer Head]
+    ? Head
+    : T extends [(target: unknown) => target is infer Head, ...infer Tail]
+    ? Head & UnionOfTypesFromNarrowFuncFixedArray<Tail>
+    : never;
 
 export type FixedArrayValues<T extends unknown> = T extends [
   (target: unknown) => target is infer Head

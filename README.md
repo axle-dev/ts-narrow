@@ -89,6 +89,11 @@ Checks if target is an instance of a class.
 Throws if passed condition is not true.
 Can receive a optional message or anything that extends Error to customize the message to be throw.
 
+### assertOf
+Throws if passed condition is not true.
+It also narrows argument to have matched condition type.
+Can receive a optional message or anything that extends Error to customize the message to be throw.
+
 <!-- ### hasElementsOf -->
 
 ### isOneStringLiteralOf

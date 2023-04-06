@@ -23,6 +23,7 @@ import { isBoolean } from "./isBoolean.js";
 import { ensureOf } from "./ensureOf.js";
 import { isTruthy } from "./isTruthy.js";
 import { isUnionOf } from "./isUnionOf.js";
+import { assertOf } from "./assertOf.js";
 
 export {
   hasElementAt,
@@ -50,4 +51,5 @@ export {
   ensureOf,
   isTruthy,
   isUnionOf,
+  assertOf
 };

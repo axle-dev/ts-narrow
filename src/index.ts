@@ -24,6 +24,7 @@ import { ensureOf } from "./ensureOf.js";
 import { isTruthy } from "./isTruthy.js";
 import { isUnionOf } from "./isUnionOf.js";
 import { assertOf } from "./assertOf.js";
+import { isIndexOf } from "./isIndexOf.js";
 
 export {
   hasElementAt,
@@ -51,5 +52,6 @@ export {
   ensureOf,
   isTruthy,
   isUnionOf,
-  assertOf
+  assertOf,
+  isIndexOf,
 };

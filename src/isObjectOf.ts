@@ -1,9 +1,9 @@
 import { hasPropOf } from "./hasPropOf.js";
 import { isObject } from "./isObject.js";
-import { NarrowFunc } from "./types.js";
+import { NarrowOf } from "./types.js";
 
-type TargetOfNarrow<Target> = Target extends NarrowFunc<infer U> ? U : never;
-type NarrowAny = NarrowFunc<unknown>;
+type TargetOfNarrow<Target> = Target extends NarrowOf<infer U> ? U : never;
+type NarrowAny = NarrowOf<unknown>;
 type NarrowFuncRecord = Record<string | symbol | number, NarrowAny>;
 
 export const isObjectOf =

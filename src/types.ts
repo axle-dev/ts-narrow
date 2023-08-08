@@ -1,4 +1,4 @@
-export type NarrowFunc<T> = (element: unknown) => element is T;
+export type NarrowOf<T> = (element: unknown) => element is T;
 
 export type TypesFromFixedArray<T extends unknown> = T extends [infer Head]
   ? Head
@@ -29,4 +29,4 @@ export type FixedArrayValues<T extends unknown> = T extends [
   ? [Head, ...FixedArrayValues<Tail>]
   : never;
 
-export type InferNarrow<T> = T extends NarrowFunc<infer U> ? U : T;
+export type InferNarrow<T> = T extends NarrowOf<infer U> ? U : T;

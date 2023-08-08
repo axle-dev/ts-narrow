@@ -25,6 +25,8 @@ import { isTruthy } from "./isTruthy.js";
 import { isUnionOf } from "./isUnionOf.js";
 import { assertOf } from "./assertOf.js";
 import { isIndexOf } from "./isIndexOf.js";
+import { InferNarrow } from "./types.js";
+import { NarrowOf } from "./types.js";
 
 export {
   hasElementAt,
@@ -54,4 +56,6 @@ export {
   isUnionOf,
   assertOf,
   isIndexOf,
+  InferNarrow,
+  NarrowOf,
 };

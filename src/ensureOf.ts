@@ -1,4 +1,4 @@
-import type { NarrowOf } from "./types";
+import type { NarrowOf } from "./types.js";
 
 export const ensureOf =
   <T, Target>(f: NarrowOf<T>) =>

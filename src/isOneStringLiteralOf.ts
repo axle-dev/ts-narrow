@@ -1,4 +1,4 @@
-import type { TypesFromFixedArray } from "./types";
+import type { TypesFromFixedArray } from "./types.js";
 
 export const isOneStringLiteralOf =
   <T extends string[]>(...args: T) =>

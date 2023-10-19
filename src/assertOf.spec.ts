@@ -1,6 +1,6 @@
 import { assertOf } from "./assertOf.js";
-import { isLiteral } from "./isLiteral";
-import { isObjectOf } from "./isObjectOf";
+import { isLiteral } from "./isLiteral.js";
+import { isObjectOf } from "./isObjectOf.js";
 
 const a: unknown = { 123: 5, 456: "123" };
 

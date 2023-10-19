@@ -1,5 +1,5 @@
 import { assert } from "./assert.js";
-import { NarrowOf } from "./types.js";
+import type { NarrowOf } from "./types.js";
 
 export const assertOf: <T>(
   target: unknown,

@@ -1,6 +1,6 @@
 {
   "name": "ts-narrow",
-  "version": "0.27.2",
+  "version": "0.27.3",
   "description": "typescript type predicates with no dependencies",
   "module": "./lib/esm/index.js",
   "main": "./lib/cjs/index.js",

@@ -1,4 +1,4 @@
 export const isIndexOf =
-  <Target extends Record<string, unknown>>(enumToCompare: Target) =>
-  (target: string | number | symbol): target is keyof Target =>
+  <Target extends Record<keyof unknown, unknown>>(enumToCompare: Target) =>
+  (target: any): target is keyof Target =>
     target in enumToCompare;

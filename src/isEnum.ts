@@ -2,8 +2,12 @@ import { hasPropOf } from "./hasPropOf.js";
 import { isNumber } from "./isNumber.js";
 import { isObject } from "./isObject.js";
 import { isString } from "./isString.js";
+import {
+  createValidationIssue,
+  withValidation,
+} from "./validation.js";
 
-export const isEnum = <Target extends Record<string, string | number>>(
+const narrow = <Target extends Record<string, string | number>>(
   target: unknown
 ): target is Target => {
   if (!(target instanceof Array) && isObject(target)) {
@@ -25,3 +29,9 @@ export const isEnum = <Target extends Record<string, string | number>>(
   }
   return false;
 };
+
+export const isEnum = withValidation(narrow, (target, path) =>
+  narrow(target)
+    ? []
+    : [createValidationIssue(path, "invalid_enum", "TypeScript enum object", target)]
+);

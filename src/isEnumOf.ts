@@ -1,9 +1,12 @@
 import { isEnum } from "./isEnum.js";
+import {
+  createValidationIssue,
+  withValidation,
+} from "./validation.js";
 
 export const isEnumOf =
-  <Target extends Record<string, string | number>>(enumToCompare: Target) =>
-  (target: unknown): target is Target => {
-    return (
+  <Target extends Record<string, string | number>>(enumToCompare: Target) => {
+    const narrow = (target: unknown): target is Target =>
       isEnum(target) &&
       Object.entries(target).every(
         ([targetProp, targetValue]) => enumToCompare[targetProp] === targetValue
@@ -11,6 +14,18 @@ export const isEnumOf =
       Object.entries(enumToCompare).every(
         ([enumToCompareProp, enumToCompareValue]) =>
           target[enumToCompareProp] === enumToCompareValue
-      )
+      );
+
+    return withValidation(narrow, (target, path) =>
+      narrow(target)
+        ? []
+        : [
+            createValidationIssue(
+              path,
+              "invalid_enum",
+              "matching enum object",
+              target
+            ),
+          ]
     );
   };

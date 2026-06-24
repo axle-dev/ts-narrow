@@ -22,5 +22,6 @@ describe("isRecordOf", () => {
   it("is falsy", () => {
     expect(isRecordOf(isNumber)(obj)).toBeFalsy();
     expect(isRecordOf(isOneOf(isString, isObject))(obj2)).toBeFalsy();
+    expect(isRecordOf(isString)(null)).toBeFalsy();
   });
 });

@@ -7,13 +7,13 @@
     "lib/"
   ],
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "build": "rm -rf lib && npx tsc && npx tsc -p ./tsconfig-cjs.json && ./fixup"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build": "rm -rf lib && npx tsc -p ./tsconfig.build.json && npx tsc -p ./tsconfig-cjs.json && ./fixup"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/axle-dev/is.git"
+    "url": "git+https://github.com/axle-dev/ts-narrow.git"
   },
   "keywords": [
     "typescript"
@@ -21,17 +21,16 @@
   "author": "Gabriel Rocha de Oliveira",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/axle-dev/is/issues"
+    "url": "https://github.com/axle-dev/ts-narrow/issues"
   },
-  "homepage": "https://github.com/axle-dev/is#readme",
+  "homepage": "https://github.com/axle-dev/ts-narrow#readme",
   "devDependencies": {
-    "@types/jest": "^29.5.14",
-    "jest": "^29.7.0",
-    "ts-jest": "^29.2.5",
-    "typescript": "^5.6.3"
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.9"
   },
   "exports": {
     "import": "./lib/esm/index.js",
     "require": "./lib/cjs/index.js"
-  }
+  },
+  "version": "0.31.0"
 }

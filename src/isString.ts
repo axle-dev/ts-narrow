@@ -1,2 +1,9 @@
-export const isString = (target: unknown): target is string =>
+import { createPredicateValidator, withValidation } from "./validation.js";
+
+const narrow = (target: unknown): target is string =>
   typeof target === "string";
+
+export const isString = withValidation(
+  narrow,
+  createPredicateValidator(narrow, "string")
+);
